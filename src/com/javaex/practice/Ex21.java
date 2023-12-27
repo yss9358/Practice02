@@ -28,10 +28,37 @@ public class Ex21 {
 		
 		int no = sc.nextInt();
 		
+		if (no%3==0) {
+			
+			if (no==0) {
+				
+				System.out.println("잘못된 사번입니다.");
+				
+			} else {
+				
+				System.out.println("A팀입니다.");
+				
+			}
+			
+		} else if (no%3==1) {
+			
+			System.out.println("B팀입니다.");
+			
+		} else if (no%3==2) {
+			
+			System.out.println("C팀입니다.");
+			
+		} 
 		
-		sc.close();
+		if (no<0) {
+			
+			System.out.println("잘못입력하셨습니다.");
+			
 		}
 		
-
+		sc.close();
+		
+		}
+		
  }
 
