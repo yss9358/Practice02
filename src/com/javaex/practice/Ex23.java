@@ -1,5 +1,7 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex23 {
 
 	public static void main(String[] args) {
@@ -20,23 +22,37 @@ public class Ex23 {
 		
 		----------------------------------------------------------------------
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		*/
 		
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("태어난 년도를 입력해 주세요");
+		System.out.print("년도: ");
+		int y = sc.nextInt(); // y, year
+		int x = 2023; // x = 올해
+		int a = x-y; // a, age 나이
+		System.out.println("올해: " + x);
+		System.out.println("태어난해 :" + y);
+		System.out.println("나이: " + a );
+		System.out.println("===============================");
 		
+		if(a>=20) {
+			System.out.println("20살이상");
+			if(x%2==y%2) {
+				System.out.println("건강검진해");
+				if(a<40) {
+					System.out.println("암 검사X");
+				} else {
+					System.out.println("암 검사");
+				}
+			} else {
+				System.out.println("건강검진해 아님");
+			} 
+		} else {
+			System.out.println("20살미만 건강검진대상이 아님");
+		}
 		
+		sc.close();
 
 	}
 
